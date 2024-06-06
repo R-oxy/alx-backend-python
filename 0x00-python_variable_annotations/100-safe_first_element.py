@@ -4,8 +4,8 @@
 from typing import Any, Sequence, Union
 
 
-def safe_first_element(lst: Sequence) -> Union[Any, None]:
-    """Return first element of sequence or None if sequence is empty."""
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
+    """Return first element of list or none."""
     if lst:
         return lst[0]
     else:
